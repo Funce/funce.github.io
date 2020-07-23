@@ -1,0 +1,50 @@
+html,
+body {
+  color: #fff;
+}
+
+[data-parallax] {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #000;
+}
+
+[data-parallax] > * {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: repeat;
+  background-size: 30vw 30vw;
+}
+
+[data-parallax] > *:nth-child(1) {
+  background-image: url("4-space.jpg");
+  background-size: 120vw;
+}
+[data-parallax] > *:nth-child(2) {
+  background-image: url("planet.png");
+  background-repeat: no-repeat;
+}
+[data-parallax] > *:nth-child(3) {
+  background-image: linear-gradient(to right, #fff, transparent 1px),
+    linear-gradient(to bottom, #fff 1px, transparent 1px);
+}
+
+/*
+[data-parallax] > *:nth-child(1) {
+  background-image: linear-gradient(to right, #333 1px, transparent 1px),
+    linear-gradient(to bottom, #333 1px, transparent 1px);
+}
+[data-parallax] > *:nth-child(2) {
+  background-image: linear-gradient(to right, #777 1px, transparent 1px),
+    linear-gradient(to bottom, #777 1px, transparent 1px);
+}
+[data-parallax] > *:nth-child(3) {
+  background-image: linear-gradient(to right, #fff, transparent 1px),
+    linear-gradient(to bottom, #fff 1px, transparent 1px);
+}
+*/
